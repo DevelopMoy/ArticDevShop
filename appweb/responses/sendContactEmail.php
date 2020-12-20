@@ -18,7 +18,7 @@ if(isset($nombClient)&&isset($emailClient)&&isset($asuntClient)&&isset($msjClien
         </head>
         <body>
           <h1>Mensaje Cliente</h1>
-          <p>Enviado el dia'.date('l \t\h\e jS').'</p>
+          <p>Enviado el dia '.date("F j, Y, g:i a").'</p>
           <p>Mensaje de: '.$nombClient.'</p>
           <p>'.$msjClient.'</p>
           <p>Contactalo al correo: '.$emailClient.'</p>
@@ -28,5 +28,24 @@ if(isset($nombClient)&&isset($emailClient)&&isset($asuntClient)&&isset($msjClien
     $headers="From: ".$from."\r\n";
     $headers.='Content-type: text/html; charset=iso-8859-1' . "\r\n";
     mail($to,$subject,$message,$headers);
+
+    $msjCliente='
+        <html>
+        <head>
+          <title>Gracias por su mensaje</title>
+        </head>
+        <body>
+            <img src="https://articdev.online/appweb/images/logoForEmail.jpeg">
+            <br>
+          <h1><b>Hemos recibido satisfactoriamente su correo de contacto</b></h1>
+          <br>
+          <p>Enviado el dia '.date("F j, Y, g:i a").'</p>
+          <p>Le agradecemos su preferencia</p>
+          <br>
+          <p>Enseguida nos pondremos en contacto con usted</p>
+        </body>
+        </html>
+        ';
+    mail($emailClient,"ArticDev Shop, Gracias Por Contactarnos",$msjCliente,$headers);
     header("Location: ../mod/contactanos.php");
 }
