@@ -12,9 +12,26 @@
 #navbarNav{
     margin-left: 10%;
 }
+#userNav{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+#userNav i, #userNav p{
+    flex-basis: 100%;
+    color: ;
+}
+#carritoBtn p,#carritoBtn i{
+    color: white;
+}
 
 #carritoBtn{
-    margin-left: 48%;
+    display: flex;
+    margin-left: 28%;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 #botonLogin{
@@ -23,19 +40,19 @@
 
 @media (max-width: 1486px) {
     #carritoBtn{
-        margin-left: 40%;
+        margin-left: 15%;
     }
 }
 
 @media (max-width: 1320px) {
     #carritoBtn{
-        margin-left: 32%;
+        margin-left: 12%;
     }
 }
 
 @media (max-width: 1166px) {
     #carritoBtn{
-        margin-left: 18%;
+        margin-left: 10%;
     }
 }
 

@@ -27,9 +27,13 @@
             </li>
 
         </ul>
-        <p id="mensajeBienvenida"><?php if(isset($_SESSION["userNombre"])&&!empty($_SESSION["userNombre"])){echo "Hola ".$_SESSION["userNombre"];} ?></p>
-        <a href="#" id="carritoBtn"><img src="/appweb/images/carticon.svg"></a>
-        <?php if(isset($_SESSION["userNombre"])&&!empty($_SESSION["userNombre"])){echo "<a href='/appweb/mod/logout.php'>Cerrar sesión</a>";} ?>
-        <?php if(!isset($_SESSION["userNombre"])||empty($_SESSION["userNombre"])){ echo '<a href="/appweb/mod/loginView.php"><button class="btn btn-primary" type="button" id="botonLogin">Login</button></a>';} ?>
+        <div id="carritoBtn">
+            
+                <?php if(isset($_SESSION["userNombre"])&&!empty($_SESSION["userNombre"])){echo '<div id="userNav"><i class="far fa-user-circle fa-3x"></i> <p styles="color:white;" id="mensajeBienvenida">'. $_SESSION["userNombre"].'</p> </div> ';} ?>
+           
+            <a href="#" ><img src="/appweb/images/carticon.svg"></a>
+            <?php if(isset($_SESSION["userNombre"])&&!empty($_SESSION["userNombre"])){echo "<a class='btn btn-link' href='/appweb/mod/logout.php'>Cerrar sesión</a>";} ?>
+            <?php if(!isset($_SESSION["userNombre"])||empty($_SESSION["userNombre"])){ echo '<a href="/appweb/mod/loginView.php"><button class="btn btn-primary" type="button" id="botonLogin">Login</button></a>';} ?>
+        </div>
     </div>
 </nav>
