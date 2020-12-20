@@ -20,7 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbd93108-0f37-444f-9fc1-57bfd956cbc2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/appweb/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/js/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appweb/js/agregarCarrito.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appweb/responses/agregarCarrito.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/css/prodIndivid.css" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/css/prodIndivid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/mod/carrito.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/carrito.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/mod/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/mod/prodIndiv.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/prodIndiv.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/otherResources/imagenCaptcha.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/otherResources/imagenCaptcha.jpeg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +116,7 @@
       <workItem from="1608349505863" duration="41000" />
       <workItem from="1608424735461" duration="348000" />
       <workItem from="1608427513211" duration="161000" />
+      <workItem from="1608432485487" duration="10904000" />
     </task>
     <servers />
   </component>
@@ -136,11 +144,15 @@
       <screen x="74" y="44" width="1846" height="1036" />
     </state>
     <state x="747" y="281" width="489" height="567" key="NewPhpClassDialog/74.44.1846.1036@74.44.1846.1036" timestamp="1607907185344" />
-    <state x="792" y="488" width="379" height="145" key="NewPhpFileDialog" timestamp="1608347666864">
+    <state x="792" y="488" width="379" height="145" key="NewPhpFileDialog" timestamp="1608443384101">
       <screen x="74" y="44" width="1846" height="1036" />
     </state>
     <state x="1020" y="627" width="379" height="145" key="NewPhpFileDialog/72.28.1848.1052@72.28.1848.1052" timestamp="1607646977754" />
-    <state x="792" y="488" width="389" height="155" key="NewPhpFileDialog/74.44.1846.1036@74.44.1846.1036" timestamp="1608347666864" />
+    <state x="792" y="488" width="389" height="155" key="NewPhpFileDialog/74.44.1846.1036@74.44.1846.1036" timestamp="1608443384101" />
+    <state x="821" y="245" width="341" height="639" key="RollbackChangesDialog" timestamp="1608438818080">
+      <screen x="74" y="44" width="1846" height="1036" />
+    </state>
+    <state x="821" y="245" width="341" height="639" key="RollbackChangesDialog/74.44.1846.1036@74.44.1846.1036" timestamp="1608438818080" />
     <state x="486" y="197" width="1022" height="736" key="SettingsEditor" timestamp="1607298062397">
       <screen x="74" y="44" width="1846" height="1036" />
     </state>
