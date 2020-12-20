@@ -20,27 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbd93108-0f37-444f-9fc1-57bfd956cbc2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/appweb/css/comprasStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/css/comprasStyles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/images/Carrito2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/images/Carrito2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/images/FondoAdd.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/images/FondoAdd.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/images/android-chrome-192x192.png" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/images/android-chrome-192x192.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/images/android-chrome-512x512.png" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/images/android-chrome-512x512.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/images/apple-touch-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/images/apple-touch-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/images/contacto.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/images/contacto.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/images/favicon-16x16.png" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/images/favicon-16x16.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/images/favicon-32x32.png" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/images/favicon-32x32.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/images/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/images/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/images/fondorec.png" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/images/fondorec.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/images/imagenRegistrar.png" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/images/imagenRegistrar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/images/logoForEmail.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/images/logoForEmail.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/images/register.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/images/register.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/js/mostrarCupon.js" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/js/mostrarCupon.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/mod/compras.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/compras.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appweb/mod/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/mod/testmail.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/testmail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/mod/loginLogic.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/loginLogic.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/mod/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/logout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appweb/otherResources/imagenCaptcha.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/otherResources/imagenCaptcha.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/responses/actualizarCarrito.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/responses/actualizarCarrito.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/responses/sendContactEmail.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/responses/sendContactEmail.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,6 +130,7 @@
       <workItem from="1608457153917" duration="966000" />
       <workItem from="1608458438365" duration="455000" />
       <workItem from="1608459294027" duration="70000" />
+      <workItem from="1608490067209" duration="1745000" />
     </task>
     <servers />
   </component>
