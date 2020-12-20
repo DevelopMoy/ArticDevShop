@@ -5,6 +5,14 @@
 
 /* ESTILOS HEADER NAV */
 
+#cantidadCarrito #numeroCarrito{
+    color: black;
+    position: absolute;
+    margin-left: 15px;
+    margin-bottom: 50px;
+    bottom: 5px;
+}
+
 .imgNav{
     margin-left: 10%;
 }
