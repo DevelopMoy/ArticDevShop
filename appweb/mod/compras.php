@@ -26,6 +26,12 @@
         <h1>Cantidad</h1>
         <h1>Precio Unitario</h1>
         <h1>Subtotal</h1>
+        <div id=productoCarrito>
+            <p></p>
+            <input type="number" id=cantidadProductos name="cantidadProductos" min="1" max="1">
+            <p></p>
+            <p></p>
+        </div>
         <div id="botonesCarritoContainer">
            <button class="btn"> Limpiar Carrito </button>
            <button class="btn">Copletar Orden</button>
