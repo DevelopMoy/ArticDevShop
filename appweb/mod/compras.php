@@ -22,19 +22,22 @@
     <?php require_once "../inc/initialconfig.php";?>
     <?php include "header.php" ?>
     <div id="carritoContainer">
-        <h1 id="nameProducto">Nombre</h1>
+        <div id="titulosCarrito">
+            <h1 class="nameProducto">Nombre</h1>
         <h1>Cantidad</h1>
         <h1>Precio Unitario</h1>
         <h1>Subtotal</h1>
+        </div>
+        
         <div id=productoCarrito>
-            <p></p>
+            <p class="nameProducto">.</p>
             <input type="number" id=cantidadProductos name="cantidadProductos" min="1" max="1">
             <p></p>
             <p></p>
         </div>
         <div id="botonesCarritoContainer">
            <button class="btn"> Limpiar Carrito </button>
-           <button class="btn">Copletar Orden</button>
+           <button class="btn">Completar Orden</button>
         </div>
        
     </div>

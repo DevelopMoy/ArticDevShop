@@ -12,12 +12,17 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     flex-wrap: wrap;
     justify-content: center;
 }
-#carritoContainer h1{
-    flex-basis: 20%;
-    font-size: 35px;
+#titulosCarrito{
+    display: flex;
+    justify-content: space-around;
 }
-#carritoContainer h1.nameProducto{
-    flex-basis: 40%;
+#titulosCarrito h1{
+    text-align: center;
+    flex-basis: 20%;
+    font-size: 25px;
+}
+.nameProducto{
+    flex-basis: 30% !important;
 }
 #carritoContainer div{
     flex-basis: 100%;
@@ -25,5 +30,15 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 #botonesCarritoContainer{
     border-top: solid black ;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+#productoCarrito{
+    display: flex;
+    justify-content: space-around;
+    border-top: black solid;
+   
+}
+#productoCarrito p, #productoCarrito input{
+    margin: 2rem auto;
+    flex-basis: 20%;
 }
