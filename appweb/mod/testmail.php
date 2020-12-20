@@ -1,4 +1,5 @@
 <?php
+/*
 
 ini_set('display_errors',1);
 error_reporting(E_ALL);
@@ -31,3 +32,5 @@ $headers="From: ".$from."\r\n";
 $headers.='Content-type: text/html; charset=iso-8859-1' . "\r\n";
 mail($to,$subject,$message,$headers);
 echo  "todo good";
+
+*/
