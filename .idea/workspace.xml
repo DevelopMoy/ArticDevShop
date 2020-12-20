@@ -20,10 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbd93108-0f37-444f-9fc1-57bfd956cbc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/appweb/responses/actualizarCarrito.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/js/agregarCarrito.js" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/js/agregarCarrito.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/mod/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/mod/registerView.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/registerView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/otherResources/imagenCaptcha.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/otherResources/imagenCaptcha.jpeg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,6 +125,7 @@
       <workItem from="1608452224173" duration="1907000" />
       <workItem from="1608454697287" duration="1506000" />
       <workItem from="1608457153917" duration="966000" />
+      <workItem from="1608458438365" duration="455000" />
     </task>
     <servers />
   </component>
