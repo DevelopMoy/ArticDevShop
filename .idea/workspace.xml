@@ -20,14 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbd93108-0f37-444f-9fc1-57bfd956cbc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/appweb/js/agregarCarrito.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appweb/responses/agregarCarrito.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/css/prodIndivid.css" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/css/prodIndivid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/mod/carrito.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/carrito.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appweb/mod/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/mod/prodIndiv.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/prodIndiv.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/otherResources/imagenCaptcha.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/otherResources/imagenCaptcha.jpeg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +111,7 @@
       <workItem from="1608424735461" duration="348000" />
       <workItem from="1608427513211" duration="161000" />
       <workItem from="1608432485487" duration="10904000" />
+      <workItem from="1608445852467" duration="301000" />
     </task>
     <servers />
   </component>
