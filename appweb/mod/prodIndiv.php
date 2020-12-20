@@ -45,14 +45,23 @@
                     <p id="precProd">Desde $ <?php echo $precPr;?></p>
                     <p id="promoProd"><span><img style="color: #97CADB;" src="/appweb/images/iconoFlight.png"></span> Con envíos Artic-Dev recibe tu producto al instante</p>
                     <p id="descrProd"><?php echo $desPr;?></p>
-                    <div id="botonCarrito">
-                        <p>Añadir al carrito</p>
-                    </div>
+                    <p id="idProduc"><?php echo $idPr?></p>
+                    <?php
+                        if(isset($_SESSION["userNombre"])&&!empty($_SESSION["userNombre"])){
+                            echo "<input type='number' id='cantidad' value='1' min='0'>";
+                            echo '<button type="button" id="botonCarrito">Añadir al carrito</button>';
+                            echo "<p id='seccAvis'></p>";
+                        }else{
+                            echo '<a href="loginView.php" id="botonCarrito">Añadir al carrito</a>';
+                        }
+                    ?>
+
                 </div>
             </div>
         </div>
 
         <?php include "footer.php";?>
+        <script src="../js/agregarCarrito.js"></script>
         <script src="https://kit.fontawesome.com/791abd0481.js" crossorigin="anonymous"></script>
     </body>
 

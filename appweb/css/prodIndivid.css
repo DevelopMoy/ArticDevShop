@@ -1,3 +1,38 @@
+#btnCrr, #btnCrr:active, #btnCrr:visited, #btnCrr:focus, #botonCarrito:active, #botonCarrito:focus, #botonCarrito:target, #botonCarrito, button:active, button:target{
+    background: none;
+    padding: 10px;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    -webkit-user-select: none; /* for button */
+    -webkit-appearance: button; /* for input */
+    -moz-user-select: none;
+    border-radius: 20px;
+    border: 2px solid #494949;
+    -ms-user-select: none;
+}
+
+#idProduc{
+    display: none;
+}
+
+#cantidad{
+    width: 15%;
+    border-radius: 2px;
+    color: #004481;
+    background-color: white;
+    margin: 0 0 15px 4%;
+}
+
+#seccAvis{
+    margin-top: 10px;
+    color: #004481;
+    font-size: 17px;
+    text-align: center;
+}
+
 #contenedorPadre{
     width: 100%;
     display: flex;
@@ -63,8 +98,7 @@
 #botonCarrito{
     width: 23%;
     border-radius: 20px;
-    color: #004481;
-    background-color: #97CADB;
+    border: 2px solid #494949;
     display: flex;
     justify-content: center;
     align-content: center;
