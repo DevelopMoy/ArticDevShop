@@ -22,6 +22,9 @@
             <li class="nav-item">
                 <a class="nav-link h5" href="/appweb/mod/FQA.php">Ayuda</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link h5" href="/appweb/mod/cuponera.php">Cupones</a>
+            </li>
 
         </ul>
         <p id="mensajeBienvenida"><?php if(isset($_SESSION["userNombre"])&&!empty($_SESSION["userNombre"])){echo "Hola ".$_SESSION["userNombre"];} ?></p>
