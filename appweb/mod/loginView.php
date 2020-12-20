@@ -16,9 +16,7 @@
 <?php require_once "../inc/initialconfig.php";?>
 <?php include "header.php" ?>
  <div class="contenedor">
-        
-            <img class="imagen" src="/appweb/images/fondoIzq.jpg" alt="" style="height: 650px">
-        
+        <img class="imagen" src="/appweb/images/fondoIzq.jpg" alt="" style="height: 650px">
         <div class="login">
         <form id="formularioLogin" action="loginLogic.php" method="post">
             <label for="correo">Inicia Sesión</label><br>
