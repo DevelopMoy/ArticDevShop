@@ -25,7 +25,7 @@
         <h1>Conoce los cupones exclusivos</h1>
     </div>
     <div class="cupon-container">
-        <div class="cupon">
+        <!--<div class="cupon">
            <div id="porcentajeCupon">
                <h1>15% </h1>
                <button class="botonCupon btn btn-success">Obtener cupon</button>
@@ -34,18 +34,27 @@
                 <h1 id="porcentajeOferta">Por temporada Navideña</h1>
                 <h3>Obten 15% de descuento en </h3>
             </div>
-        </div>
-        <div class="cupon">
-           <div id="porcentajeCupon">
-               <h1>15% </h1>
-               <button class="botonCupon btn btn-success">Obtener cupon</button>
-            </div>
-            <div class="infoCupon">
-                <h1 id="porcentajeOferta">Los jueves de diciembre</h1>
-                <h3>Obten 15% de descuento en </h3>
-            </div>
-        </div>
+        </div> -->
+        <?php
+            $consultaCup=$conexionBD->query("SELECT * FROM cupon");
+
+            while ($rowCup = $consultaCup->fetch_assoc()){
+                echo "<div class='cupon' id='".$rowCup["idCupon"]."'>";
+                    echo "<div id='porcentajeCupon'>";
+                        echo "<h1>".$rowCup["porcentaje"]."%</h1>";
+                        echo '<button class="botonCupon btn btn-success" id="'.$rowCup["idCupon"].'">Obtener cupon</button>';
+                    echo "</div>";
+                    echo "<div class='infoCupon'>";
+                        echo "<h1 id='porcentajeOferta'>".$rowCup["nombreCupon"]."</h1>";
+                        echo "<h3>".$rowCup["descripcion"]."</h3>";
+                    echo "</div>";
+                echo "</div>";
+            }
+
+        ?>
+
     </div>
     <?php include "footer.php";?>
+    <script src="../js/mostrarCupon.js"></script>
 </body>
 </html>
