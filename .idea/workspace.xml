@@ -20,10 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbd93108-0f37-444f-9fc1-57bfd956cbc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/appweb/js/mostrarCupon.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appweb/responses/actualizarCarrito.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/mod/cuponera.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/cuponera.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/otherResources/imagenCaptcha.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/otherResources/imagenCaptcha.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/js/agregarCarrito.js" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/js/agregarCarrito.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/mod/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +126,7 @@
       <workItem from="1608451487969" duration="357000" />
       <workItem from="1608452224173" duration="1907000" />
       <workItem from="1608454697287" duration="1506000" />
+      <workItem from="1608457153917" duration="966000" />
     </task>
     <servers />
   </component>
@@ -153,11 +154,11 @@
       <screen x="74" y="44" width="1846" height="1036" />
     </state>
     <state x="747" y="281" width="489" height="567" key="NewPhpClassDialog/74.44.1846.1036@74.44.1846.1036" timestamp="1607907185344" />
-    <state x="792" y="488" width="379" height="145" key="NewPhpFileDialog" timestamp="1608452264393">
+    <state x="792" y="488" width="379" height="145" key="NewPhpFileDialog" timestamp="1608457714810">
       <screen x="74" y="44" width="1846" height="1036" />
     </state>
     <state x="1020" y="627" width="379" height="145" key="NewPhpFileDialog/72.28.1848.1052@72.28.1848.1052" timestamp="1607646977754" />
-    <state x="792" y="488" width="389" height="155" key="NewPhpFileDialog/74.44.1846.1036@74.44.1846.1036" timestamp="1608452264393" />
+    <state x="792" y="488" width="389" height="155" key="NewPhpFileDialog/74.44.1846.1036@74.44.1846.1036" timestamp="1608457714810" />
     <state x="821" y="245" width="341" height="639" key="RollbackChangesDialog" timestamp="1608438818080">
       <screen x="74" y="44" width="1846" height="1036" />
     </state>
