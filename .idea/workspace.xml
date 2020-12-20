@@ -20,8 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbd93108-0f37-444f-9fc1-57bfd956cbc2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/appweb/js/mostrarCupon.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/responses/sendContactEmail.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/responses/sendContactEmail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/mod/cuponera.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/cuponera.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/otherResources/imagenCaptcha.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/otherResources/imagenCaptcha.jpeg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +124,8 @@
       <workItem from="1608447182615" duration="2101000" />
       <workItem from="1608449441253" duration="1115000" />
       <workItem from="1608451487969" duration="357000" />
-      <workItem from="1608452224173" duration="1453000" />
+      <workItem from="1608452224173" duration="1907000" />
+      <workItem from="1608454697287" duration="1506000" />
     </task>
     <servers />
   </component>
