@@ -23,6 +23,7 @@ $message='
       <td>Sally</td><td>17</td><td>Agosto</td><td>1973</td>
     </tr>
   </table>
+  <img src="https://articdev.online/appweb/images/prodPics/1.png">
 </body>
 </html>
 ';
