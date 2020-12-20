@@ -19,7 +19,6 @@
 }
 #userNav i, #userNav p{
     flex-basis: 100%;
-    color: ;
 }
 #carritoBtn p,#carritoBtn i{
     color: white;
@@ -77,7 +76,7 @@
 
 .footer1 {
     text-align: center;
-    widows: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
