@@ -6,11 +6,12 @@
 /* ESTILOS HEADER NAV */
 
 #cantidadCarrito #numeroCarrito{
-    color: black;
+    color:rgba(30, 139, 195, 1);
     position: absolute;
     margin-left: 15px;
     margin-bottom: 50px;
     bottom: 5px;
+    box-shadow: inset 0px -23px 123px 21px rgba(0,0,0,0.31);
 }
 
 .imgNav{
