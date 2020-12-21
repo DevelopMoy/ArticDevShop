@@ -22,7 +22,7 @@ if(isset($_POST["emailRec"])&&!empty($_POST["emailRec"])){
                 $to=$_POST["emailRec"];
                 $subject = "Solicitud de pagina web";
                 $message='
-                         Buen día cliente, favor de seguir las instrucciones para recuperar su cuenta, ingrese el siguiente codigo al enlace marcado: '.$codigoRecu.' 
+                         Buen dia cliente, favor de seguir las instrucciones para recuperar su cuenta, ingrese el siguiente codigo al enlace marcado: '.$codigoRecu.' 
                           https://articdev.online/appweb/mod/recupusr.php   Le agradecemos su atención y le deseamos felices fiestas. 
                     ';
                 $headers="From: ".$from."\r\n";
