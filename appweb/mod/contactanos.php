@@ -17,6 +17,7 @@
 
     <div class="contenedor">
         <div class="contacto">
+            <h1>Contactanos</h1>
             <form action="" id="contactanos">
                 <label for="nombre">Nombre:</label> <br>
                 <input type="text" id="nombre" name="nombre"> <br>

@@ -3,22 +3,25 @@ input:focus{
     border: 2px solid #cccccc;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;800&display=swap');
 textarea:focus{
     outline: none;
     border: 2px solid #cccccc;
 }
 
 div.contenedor2{
+    background-color: rgba(0,68,126,0.8);
     display: flex;
     justify-content: center;
     margin-left: 4%;
-    background-color: rgb(0,27,72);
     color: white;
     border-radius: 20px;
     padding-top: 10px;
     width: 82%;
     margin-left: 9%;
     margin-bottom: 2%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
 }
 div.contenedor{
     display: flex;
@@ -28,15 +31,14 @@ div.contenedor{
 }
 
 body{
-    background: url(/appweb/images/fondoAD.jpg) no-repeat center center fixed;
-    background-size: cover;
+    background-color: #318cd6;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='141' height='141' viewBox='0 0 120 120'%3E%3Cpolygon fill='%23000000' fill-opacity='0.25' points='120 0 120 60 90 30 60 0 0 0 0 0 60 60 0 120 60 120 90 90 120 60 120 0'/%3E%3C/svg%3E");
 }
 
 div.contacto{
     width: 500px;
     text-align: center;
     background-color: rgba(0,68,126,0.8);
-    height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,39 +47,48 @@ div.contacto{
 
 
 div.mapa{
-    height: 450px;
+    align-self: stretch;
+}
+.mapa iframe{
+    height: 100%;
 }
 
 #btn1{
+    padding: 1rem;
     width: 50%;
-    border-radius: 15px;
-    border: 1px solid black;
-    background-color: rgb(0,27,72);
+    border-radius: 5px;
+    border: 0;
+    background-color: rgb(37, 179, 37);
     color: white;
-}
+    font-family: 'Raleway', sans-serif;
+font-weight: bold;
 
-div.contacto input[type=text], input[type=email]{
+}
+.contacto label, .contacto h1{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+#contactanos{
+    padding-bottom: 3rem;
+}
+.contacto h1{
+    margin-top: 2rem;
+}
+div.contacto input[type=text], input[type=email], textarea#msj{
     width: 50%;
-    border-radius: 15px;
-    border: 1px solid black;
+    border: 0;
+    border-radius: 7px;
     
-}
-
-label{
-    color: white;
 }
 
 label[for=correo],[for=msj],[for=asunto]{
     margin-top: 5px;
 }
 
-#msj{
-    border-radius: 15px;
-    border: 1px solid black;
-}
 
 #fra{
-    border-radius: 0 20px 20px 0;
+    border-radius: 7px;
 }
 
 @media (max-width:1200px){
