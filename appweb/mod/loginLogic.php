@@ -8,6 +8,13 @@
             $_SESSION["userNombre"]=$arregloDatos["nombre"];
             $_SESSION["userNickname"]=$arregloDatos["nickname"];
             $_SESSION["userID"]=$arregloDatos["idUsuar"];
+            if ($resConsAdm = $conexionBD->query("SELECT * FROM admin WHERE idAdmin=".$_SESSION["userID"])){
+                if ($resConsAdm->fetch_assoc()){
+                       $_SESSION["admin"]="true";
+                }else{
+                    $_SESSION["admin"]="";
+                }
+            }
             $conexionBD->query("UPDATE usuario SET intentos=0 WHERE idUsuar=".$arregloDatos["idUsuar"]);
             header("Location: ../../index.php");
         }else{

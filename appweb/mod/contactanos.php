@@ -18,15 +18,15 @@
     <div class="contenedor">
         <div class="contacto">
             <h1>Contactanos</h1>
-            <form action="" id="contactanos">
+            <form action="../responses/sendContactEmail.php" method="post" id="contactanos">
                 <label for="nombre">Nombre:</label> <br>
-                <input type="text" id="nombre" name="nombre"> <br>
+                <input type="text" id="nombre" required name="nombrePers"> <br>
                 <label for="correo">Correo:</label><br>
-                <input type="email" id="correo" name="correo"><br>
+                <input type="email" id="correo" required name="clientEmail"><br>
                 <label for="asunto">Asunto:</label><br>
-                <input type="text" id="asunto" name="correo"><br>
+                <input type="text" id="asunto" required name="asuntoClient"><br>
                 <label for="msj">Mensaje:</label><br>
-                <textarea name="mensaje" id="msj" cols="33" rows="5"></textarea><br><br>
+                <textarea name="msjCLient" required id="msj" cols="33" rows="5"></textarea><br><br>
                 <input type="submit" value="Enviar" id="btn1">
             </form>
         </div>

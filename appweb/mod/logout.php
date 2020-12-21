@@ -6,6 +6,7 @@
         $_SESSION["userNombre"]="";
         $_SESSION["userNickname"]="";
         $_SESSION["userID"]="";
+        $_SESSION["admin"]="";
         echo "entre";
     }
    header("Location: ../../index.php");

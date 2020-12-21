@@ -16,7 +16,7 @@
 <?php include "header.php" ?>
 <div class="contenedorRegistrar">
         <h1>Crear cuenta</h1>
-        <form id="formRegistrar" method="post" action="/appweb/mod/registroLogica.php" id="formRegistro">
+        <form method="post" action="/appweb/mod/registroLogica.php" id="formRegistro">
             <label for="nickname">Nombre de Usuario:</label>
             <input class="w-75 form-control form-control-sm" id="nickname" required name="nombUsuar" placeholder="Ususario" type="text">
             <label for="correo">Correo:</label>

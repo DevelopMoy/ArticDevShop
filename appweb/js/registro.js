@@ -26,7 +26,7 @@ botonRegis.addEventListener("click",()=>{
                         document.querySelector("#formRegistro").submit();
                     }
                 }else {
-                    avisos.innerHTML="El usuario ya ha sido previamente registrado, intente con otro email";
+                    avisos.innerHTML="El usuario ya ha sido previamente registrado, intente con otro email"+emailVer.value;
                 }
             }
         }

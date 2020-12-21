@@ -23,5 +23,17 @@ if (botonEnviar){
         }
         peticion.open("GET","../responses/agregarCarrito.php?prod="+idProd.innerHTML+"&cant="+cantidad.value,true);
         peticion.send();
+
+        //PETICION PARA ACTUALIZAR CARRITO
+        let peticUpdateCarr = new XMLHttpRequest();
+        peticUpdateCarr.onreadystatechange=()=>{
+            if (peticUpdateCarr.readyState==4&&peticUpdateCarr.status==200){
+                let areaNumCarrito = document.querySelector("#numeroCarrito");
+                areaNumCarrito.innerHTML=peticUpdateCarr.responseText;
+            }
+        }
+        peticUpdateCarr.open("GET","../responses/actualizarCarrito.php",true);
+        peticUpdateCarr.send();
+
     });
 }
