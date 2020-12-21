@@ -71,13 +71,15 @@
                                 echo "</div>";
                                 $totalSolicitados=0;
                             }else{
-                                echo "<div id=productoCarrito>";
-                                echo "<p class='nameProducto'>".$iterableGC["nombre"]."</p>";
-                                echo '<input type="number" name="cantidadProductos" id="p'.$iterableGC["IDProducto"].'l'.$iterableGC["NumeroLote"].'" class="cantidProdC" min="0" value="'.$iterableGC["Existencia"].'">';
-                                echo "<p>$".$iterableGC["Precio"]."</p>";
-                                echo "<p>$".($iterableGC["Precio"]*$iterableGC["Existencia"])."</p>";
-                                echo "</div>";
-                                $totalSolicitados=$totalSolicitados-$iterableGC["Existencia"];
+                                if($iterableGC["Existencia"]>0){
+                                    echo "<div id=productoCarrito>";
+                                    echo "<p class='nameProducto'>".$iterableGC["nombre"]."</p>";
+                                    echo '<input type="number" name="cantidadProductos" id="p'.$iterableGC["IDProducto"].'l'.$iterableGC["NumeroLote"].'" class="cantidProdC" min="0" value="'.$iterableGC["Existencia"].'">';
+                                    echo "<p>$".$iterableGC["Precio"]."</p>";
+                                    echo "<p>$".($iterableGC["Precio"]*$iterableGC["Existencia"])."</p>";
+                                    echo "</div>";
+                                    $totalSolicitados=$totalSolicitados-$iterableGC["Existencia"];
+                                }
                             }
                             if($totalSolicitados==0){
                                 break;
