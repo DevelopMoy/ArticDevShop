@@ -19,15 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbd93108-0f37-444f-9fc1-57bfd956cbc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/appweb/css/styleRecuperar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appweb/mod/recuperLogica.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appweb/mod/recuperar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/js/scriptsCarrito.js" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/js/scriptsCarrito.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/mod/compras.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/compras.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/mod/loginView.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/loginView.php" afterDir="false" />
-    </list>
+    <list default="true" id="dbd93108-0f37-444f-9fc1-57bfd956cbc2" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -135,7 +127,7 @@
       <workItem from="1608490067209" duration="1948000" />
       <workItem from="1608492144788" duration="2096000" />
       <workItem from="1608516776310" duration="2519000" />
-      <workItem from="1608531912519" duration="12058000" />
+      <workItem from="1608531912519" duration="12385000" />
     </task>
     <servers />
   </component>
