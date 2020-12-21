@@ -35,7 +35,7 @@
         </form>
         <div>
         <a href="/appweb/mod/registerView.php"> ¿Aun no tienes cuenta? Presiona aquí</a> <br>
-            <a href="#">¿Olvidaste tu contraseña?</a>   
+            <a href="recuperar.php">¿Olvidaste tu contraseña?</a>
         </div>
         
         </div>

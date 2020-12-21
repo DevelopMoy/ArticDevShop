@@ -56,8 +56,10 @@
 
         <?php
             //GENERAR CARRITO EN BASE A LO QUE SE SOLICITA Y A LOS PRECIOS POR LOTE
+            $band=false;
             if ($consGenCarr=$conexionBD->query("SELECT * FROM carrito WHERE idUsuar=".$_SESSION["userID"])){//CONSULTA DEL CARRITO
                 while($filaGC = $consGenCarr->fetch_assoc()){ //ITERARA TODOS LOS PRODUCTOS A SOLICITAR DEL CARRITO
+                    $band=true;
                     $productoSolicitado=$filaGC["idProd"];
                     $totalSolicitados = $filaGC["cantidad"];
                     if($consExGC=$conexionBD->query("select * from existenciaGeneral EG JOIN producto P ON EG.IDProducto=P.idProd WHERE IDProducto=".$productoSolicitado." ORDER BY Precio DESC")){//SOLICITAR EXISTENCIA POR LOTES
@@ -93,9 +95,12 @@
                 }
             }
 
+            if(!$band){
+                echo "<p style='color: gray; margin: 28px 0 28px 0'>El carrito esta vacio, agrega productos para comenzar</p>";
+            }
         ?>
+
         <div id="botonesCarritoContainer">
-           <button class="btn"> Limpiar Carrito </button>
            <button class="btn">Completar Orden</button>
         </div>
         <div style="margin-top: 15px; color: #cccccc;" <p id="seccAvis"><?php echo $aviso?></p></div>

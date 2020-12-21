@@ -1,0 +1,39 @@
+body{
+    background: url(/appweb/images/fondorec.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+div.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 4%;
+    padding: 7em 0 7em 0;
+}
+
+#recuperar{
+    background-color: rgba(0,68,126,0.8);
+    text-align: center;
+    padding: 2em;
+    border-radius: 20px;
+    color: white;
+}
+
+p.text{
+    font-weight: bold;
+    color: white;
+}
+
+#correo:focus{
+    outline: none;
+}
+
+#correo{
+    width: 100%;
+}
+
+#enviar{
+    width: 60%;
+    margin-top: 5px;
+}

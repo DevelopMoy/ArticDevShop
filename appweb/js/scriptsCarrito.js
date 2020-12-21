@@ -15,11 +15,22 @@ for (let selector of selCantidad){
                 peticion2.onreadystatechange=()=>{
                     if(peticion2.readyState===4&&peticion2.status===200){
                         if (peticion2.responseText=="ok"){
-                            avisos.innerHTML="todo ok";
+                            avisos.innerHTML="";
                         }else{
                             avisos.innerHTML=peticion2.responseText;
                         }
                     }
+
+                    let peticUpdateCarr = new XMLHttpRequest();
+                    peticUpdateCarr.onreadystatechange=()=>{
+                        if (peticUpdateCarr.readyState==4&&peticUpdateCarr.status==200){
+                            let areaNumCarrito = document.querySelector("#numeroCarrito");
+                            areaNumCarrito.innerHTML=peticUpdateCarr.responseText;
+                        }
+                    }
+                    peticUpdateCarr.open("GET","../responses/actualizarCarrito.php",true);
+                    peticUpdateCarr.send();
+
                 }
                 peticion2.open("GET","../responses/veriffyCart.php?change="+selector.id+"&new="+selector.value,true);
                 peticion2.send();
@@ -27,5 +38,7 @@ for (let selector of selCantidad){
         }
         petic.open("GET","../responses/veriffyCart.php?data="+selector.id,true);
         petic.send();
+
+
     });
 }
