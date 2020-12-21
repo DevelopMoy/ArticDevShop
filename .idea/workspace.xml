@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbd93108-0f37-444f-9fc1-57bfd956cbc2" name="Default Changelist" comment="" />
+    <list default="true" id="dbd93108-0f37-444f-9fc1-57bfd956cbc2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/appweb/mod/recuperLogica.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/recuperLogica.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,7 +130,7 @@
       <workItem from="1608492144788" duration="2096000" />
       <workItem from="1608516776310" duration="2519000" />
       <workItem from="1608531912519" duration="14890000" />
-      <workItem from="1608572247688" duration="308000" />
+      <workItem from="1608572247688" duration="624000" />
     </task>
     <servers />
   </component>
