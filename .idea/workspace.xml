@@ -21,9 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dbd93108-0f37-444f-9fc1-57bfd956cbc2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/mod/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/mod/loginLogic.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/loginLogic.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/mod/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/mod/compras.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/compras.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appweb/otherResources/imagenCaptcha.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/otherResources/imagenCaptcha.jpeg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -130,7 +128,9 @@
       <workItem from="1608457153917" duration="966000" />
       <workItem from="1608458438365" duration="455000" />
       <workItem from="1608459294027" duration="70000" />
-      <workItem from="1608490067209" duration="1745000" />
+      <workItem from="1608490067209" duration="1948000" />
+      <workItem from="1608492144788" duration="2096000" />
+      <workItem from="1608516776310" duration="2519000" />
     </task>
     <servers />
   </component>
