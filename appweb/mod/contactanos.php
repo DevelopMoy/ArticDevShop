@@ -17,6 +17,7 @@
 
     <div class="contenedor">
         <div class="contacto">
+            <h1>Contactanos</h1>
             <form action="../responses/sendContactEmail.php" method="post" id="contactanos">
                 <label for="nombre">Nombre:</label> <br>
                 <input type="text" id="nombre" required name="nombrePers"> <br>
