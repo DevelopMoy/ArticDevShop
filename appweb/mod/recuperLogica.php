@@ -20,18 +20,18 @@ if(isset($_POST["emailRec"])&&!empty($_POST["emailRec"])){
                 error_reporting(E_ALL);
                 $from="admin@articdev.online";
                 $to=$_POST["emailRec"];
-                $subject = "Recuperar Artic Dev";
+                $subject = "Solicitud de pagina web Artic Dev";
                 $message='
                          <html>
                         <head>
-                          <title>Mensaje Cliente</title>
+                         
                         </head>
                         <body>
-                          <h1>Recupera tu contraseña</h1>
-                          <p>Estimado Cliente, Favor de seguir las instrucciones para recuperar su cuenta, si no lo ha solicitado usted, pongase en contacto con nosotros</p>
-                          <p>Ingrese al siguiente enlace y escriba el codigo: </p>
+                          <h1>Buen día estimado cliente de Artic Dev</h1>
+                          <p>Estimado Cliente, Favor de seguir las instrucciones para obtener el correspondiente acceso a su cuenta, si no lo ha solicitado usted, pongase en contacto con nosotros</p>
+                          <p>Ingrese al enlace de nuestra pagina y escriba el codigo: </p>
                           <p>'.strval($codigoRecu).'</p>
-                          <a href="https://articdev.online/appweb/mod/recuUsuar.php">Presione aquí</a>
+                          <a href="https://articdev.online/appweb/mod/recuUsuar.php">Ir al enlace directo</a>
                         </body>
                         </html>
                     ';
