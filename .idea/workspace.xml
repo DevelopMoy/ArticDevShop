@@ -20,9 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbd93108-0f37-444f-9fc1-57bfd956cbc2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/appweb/js/scriptsCarrito.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appweb/responses/veriffyCart.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appweb/mod/compras.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/compras.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/otherResources/imagenCaptcha.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/otherResources/imagenCaptcha.jpeg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,6 +132,7 @@
       <workItem from="1608490067209" duration="1948000" />
       <workItem from="1608492144788" duration="2096000" />
       <workItem from="1608516776310" duration="2519000" />
+      <workItem from="1608531912519" duration="5194000" />
     </task>
     <servers />
   </component>
@@ -158,11 +160,11 @@
       <screen x="74" y="44" width="1846" height="1036" />
     </state>
     <state x="747" y="281" width="489" height="567" key="NewPhpClassDialog/74.44.1846.1036@74.44.1846.1036" timestamp="1607907185344" />
-    <state x="792" y="488" width="379" height="145" key="NewPhpFileDialog" timestamp="1608457714810">
+    <state x="792" y="488" width="379" height="145" key="NewPhpFileDialog" timestamp="1608533174607">
       <screen x="74" y="44" width="1846" height="1036" />
     </state>
     <state x="1020" y="627" width="379" height="145" key="NewPhpFileDialog/72.28.1848.1052@72.28.1848.1052" timestamp="1607646977754" />
-    <state x="792" y="488" width="389" height="155" key="NewPhpFileDialog/74.44.1846.1036@74.44.1846.1036" timestamp="1608457714810" />
+    <state x="792" y="488" width="389" height="155" key="NewPhpFileDialog/74.44.1846.1036@74.44.1846.1036" timestamp="1608533174607" />
     <state x="821" y="245" width="341" height="639" key="RollbackChangesDialog" timestamp="1608438818080">
       <screen x="74" y="44" width="1846" height="1036" />
     </state>
@@ -179,10 +181,10 @@
       <screen x="72" y="28" width="1848" height="1052" />
     </state>
     <state x="72" y="28" width="1802" height="1008" key="dock-window-1/72.28.1848.1052@72.28.1848.1052" timestamp="1607013520906" />
-    <state x="660" y="272" width="672" height="668" key="search.everywhere.popup" timestamp="1607488778963">
+    <state x="660" y="272" width="672" height="668" key="search.everywhere.popup" timestamp="1608536479791">
       <screen x="74" y="44" width="1846" height="1036" />
     </state>
     <state x="659" y="260" width="672" height="678" key="search.everywhere.popup/72.28.1848.1052@72.28.1848.1052" timestamp="1606975977626" />
-    <state x="660" y="272" width="672" height="668" key="search.everywhere.popup/74.44.1846.1036@74.44.1846.1036" timestamp="1607488778963" />
+    <state x="660" y="272" width="672" height="668" key="search.everywhere.popup/74.44.1846.1036@74.44.1846.1036" timestamp="1608536479791" />
   </component>
 </project>
