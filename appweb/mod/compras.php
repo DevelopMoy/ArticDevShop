@@ -65,7 +65,7 @@
                             if ($totalSolicitados<$iterableGC["Existencia"]){
                                 echo "<div id=productoCarrito>";
                                 echo "<p class='nameProducto'>".$iterableGC["nombre"]."</p>";
-                                echo '<input type="number" id=cantidadProductos name="cantidadProductos" min="0" value="'.$totalSolicitados.'">';
+                                echo '<input type="number" name="cantidadProductos" id="p'.$iterableGC["IDProducto"].'l'.$iterableGC["NumeroLote"].'" min="0" class="cantidProdC" value="'.$totalSolicitados.'">';
                                 echo "<p>$".$iterableGC["Precio"]."</p>";
                                 echo "<p>$".($iterableGC["Precio"]*$totalSolicitados)."</p>";
                                 echo "</div>";
@@ -73,7 +73,7 @@
                             }else{
                                 echo "<div id=productoCarrito>";
                                 echo "<p class='nameProducto'>".$iterableGC["nombre"]."</p>";
-                                echo '<input type="number" id=cantidadProductos name="cantidadProductos" min="0" value="'.$iterableGC["Existencia"].'">';
+                                echo '<input type="number" name="cantidadProductos" id="p'.$iterableGC["IDProducto"].'l'.$iterableGC["NumeroLote"].'" class="cantidProdC" min="0" value="'.$iterableGC["Existencia"].'">';
                                 echo "<p>$".$iterableGC["Precio"]."</p>";
                                 echo "<p>$".($iterableGC["Precio"]*$iterableGC["Existencia"])."</p>";
                                 echo "</div>";
@@ -99,7 +99,8 @@
         <div style="margin-top: 15px; color: #cccccc;" <p id="seccAvis"><?php echo $aviso?></p></div>
        
     </div>
+
     <?php include "footer.php";?>
-    
+    <script src="/appweb/js/scriptsCarrito.js"></script>
 </body>
 </html>
