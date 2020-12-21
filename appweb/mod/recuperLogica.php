@@ -31,7 +31,7 @@ if(isset($_POST["emailRec"])&&!empty($_POST["emailRec"])){
                         <h1 style="color: black; font-size: 28px;">Estimado Cliente, Favor de seguir las instrucciones para recuperar su cuenta, si no lo ha solicitado usted, pongase en contacto con nosotros</h1>
                         <p style="font-size: 24px; color: black;">Ingrese al siguiente enlace y escriba el codigo: </p>
                         <p style="color: black; font-size: 30px;">Codigo</p>
-                        <a href="https://articdev.online/appweb/mod/recuUsuar.php" style="font-size: 22px; color: blue;">Presione aquí</a>
+                       
                     </body>
                     </html>
                     ';
