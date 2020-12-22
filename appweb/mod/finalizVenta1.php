@@ -115,9 +115,9 @@ if ($resSetCarr=$conexionBD->query("SELECT * FROM carrito WHERE idUsuar=".$_SESS
 
         <div id="partePagos">
             <p>Elija su tipo de pago</p>
-            <input required type="radio" id="tipoPag" name="tipoPag" value="tarjetaCred">
+            <input required type="radio" checked id="pagTarj" class="pag" name="tipoPag" value="tarjetaCred">
             <label for="tarjetaCred">Tarjeta de Credito</label>
-            <input required type="radio" id="tipoPag" name="tipoPag" value="pagOxxo">
+            <input required type="radio" id="pagOx" class="pag" name="tipoPag" value="pagOxxo">
             <label for="pagOxxo">OXXO</label>
             <p>Tipo de envio</p>
             <input required type="radio" id="tipoEnvio" name="tipEnvio" value="expressEnv">
@@ -152,13 +152,15 @@ if ($resSetCarr=$conexionBD->query("SELECT * FROM carrito WHERE idUsuar=".$_SESS
                 <input id="ciudDomic" type="text" required name="ciudDomici">
                 <label for="estDomic">Estado</label>
                 <input id="estDomic" type="text" required name="estadDomic">
-
+            </div>
+            <div id="botonEnviar">
+                <input type="submit">
             </div>
         </div>
     </form>
 </div>
 
-
 <?php include "footer.php"?>
+<script src="../js/ventaFinal.js"></script>
 </body>
 </html>
