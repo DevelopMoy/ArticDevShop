@@ -2,10 +2,7 @@
     require "../inc/initialconfig.php";
     if( !(isset($_SESSION["admin"])&&!empty($_SESSION["admin"]))){
       header('Location: ../../index.php');  
-    }else{
-        
     }
-   
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,23 +28,18 @@
                    <label for="nombre">Nombre</label><br>
                    <input type="text" id="nombre" name="nombre" required><br>
                    <label for="cate">Categoria</label><br>
-                   <input list="categoria" name="categorias" />
+                   <input list="categoria" name="categorias" pattern="Procesadores|Tarjetas Graficas|Teclados|Mouses" />
                    <datalist id="categoria">
                         <option value="Procesadores">
                         <option value="Tarjetas Graficas">
-                        <option value="Internet Explorer">
                         <option value="Teclados">
                         <option value="Mouses">
                         </datalist><br>
-                   <label for="precio">Precio</label><br>
-                   <input type="number" id="precio" name="precio" required><br>
-                   <label for="cant">Cantidad</label><br>
-                   <input type="number" id="cant" name="cantidad" required><br>
                    <label for="img">Imagen del producto</label><br>
-                   <input type="file" id="img" name="imagen" required><br>
+                   <input type="file" id="img" name="imagen" require><br>
                    <label for="descript">Descripcion</label><br>
                    <textarea name="descripcion" id="descript" cols="60" rows="5" placeholder="Maximo __ caracteres" required></textarea><br>
-                   <input type="submit" value="Agregar">
+                   <input class="btn btn-success btn-lg" type="submit" value="Agregar">
                </form>
            </div>
     </div>
