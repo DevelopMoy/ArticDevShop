@@ -1,5 +1,5 @@
 <?php
-if($_SESSION["status"]=="exito"){
+if($_GET["status"]=="exito"){
     $respuesta="Gracias por suscribirse al boletin";
 }else{
     $respuesta="Ha ocurrido un error al suscribirse al boletin, favor de verificar los datos";
