@@ -41,7 +41,7 @@ if ($resSetCarr=$conexionBD->query("SELECT * FROM carrito WHERE idUsuar=".$_SESS
 }
 ?>
 <div id="contMP">
-    <form id="contPadFV">
+    <form id="contPadFV" action="finalizarCompra.php" method="post">
         <div id="subCtFV">
 
             <div id="descComprFV">
