@@ -1,0 +1,39 @@
+#contMP{
+    display: block;
+}
+
+#contPadFV{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#subCtFV{
+    flex-grow: 1;
+    margin:3% 2%;
+    background-color: #97CADB;
+    border-radius: 6px;
+    opacity: 0.9;
+}
+
+#partePagos{
+    flex-grow: 1;
+    background-color: red;
+
+}
+
+#areaTotal{
+    font-size: 2em;
+    color: black;
+    text-align: center;
+}
+
+#descComprFV{
+    padding: 2%;
+}
+
+#parteTarjetV{
+    flex-grow: 1;
+    flex-basis: 100%;
+    height: 500px;
+    background-color: blue;
+}

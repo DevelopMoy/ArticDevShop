@@ -101,7 +101,7 @@
         ?>
 
         <div id="botonesCarritoContainer">
-           <button class="btn">Completar Orden</button>
+           <a href="finalizVenta1.php"><button class="btn">Completar Orden</button></a>
         </div>
         <div style="margin-top: 15px; color: #cccccc;" <p id="seccAvis"><?php echo $aviso?></p></div>
        
