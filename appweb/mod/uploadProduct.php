@@ -53,7 +53,7 @@
          $resize = new ResizeImage( $directorio.'/'.$imagen);
          $resize->resizeTo(720, 720, 'exact');
          $resize->saveImage( $directorio.'/'.$imagen);
-            volver("Agregado con Exito.");
+            volver("Agregado con Exito. ID -> ".$idImg);
          exitoAdd();
         }else{
             volver("Un error ha ocurrido. Favor de verificar los datos");
