@@ -34,8 +34,9 @@
 
         </form>
         <div>
-        <a href="/appweb/mod/registerView.php"> ¿Aun no tienes cuenta? Presiona aquí</a> <br>
-            <a href="recuperar.php">¿Olvidaste tu contraseña?</a>
+        <a href="/appweb/mod/registerView.php" style="color: yellow"> ¿Aun no tienes cuenta? Presiona aquí</a> <br>
+            <a href="recuperar.php">¿Olvidaste tu contraseña o tu cuenta se ha bloqueado?</a>
+            <a href="modReseteo.php">¿Tienes tu codigo de reseteo? Haz click aquí</a>
         </div>
         
         </div>
