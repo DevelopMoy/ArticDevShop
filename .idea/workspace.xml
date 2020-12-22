@@ -20,10 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbd93108-0f37-444f-9fc1-57bfd956cbc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/appweb/js/ventaFinal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appweb/mod/finalizarCompra.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/mod/finalizVenta1.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/finalizVenta1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/mod/finalizarCompra.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/finalizarCompra.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +136,7 @@
       <workItem from="1608594171778" duration="5406000" />
       <workItem from="1608601926476" duration="8700000" />
       <workItem from="1608613027655" duration="41000" />
-      <workItem from="1608613798423" duration="3000000" />
+      <workItem from="1608613798423" duration="4135000" />
     </task>
     <servers />
   </component>
