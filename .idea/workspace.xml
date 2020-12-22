@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbd93108-0f37-444f-9fc1-57bfd956cbc2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/appweb/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/mod/FQA.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/FQA.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,6 +142,7 @@
       <workItem from="1608671215345" duration="646000" />
       <workItem from="1608672083385" duration="304000" />
       <workItem from="1608673854427" duration="75000" />
+      <workItem from="1608673932017" duration="720000" />
     </task>
     <servers />
   </component>

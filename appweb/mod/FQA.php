@@ -107,7 +107,7 @@
               </header>
               <div class="accordion-content">
                   <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus nostrum, mollitia distinctio corrupti consequuntur quis dolores culpa! Recusandae eum alias sapiente architecto minus cumque laudantium, incidunt nulla quae! Deleniti, aliquam. 
+                      Ingresa al apartado marcado en la ventana del login y sigue las instrucciones
                   </p>
               </div>
           </div>
