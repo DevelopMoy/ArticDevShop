@@ -108,6 +108,13 @@ a #cantidadCarrito img{
     width: 30px;
     height: 30px;
 }
+div h6{
+    color: white;
+}
+div form input[type='text']{
+    padding: .5rem;
+    padding-right: 6rem;
+}
 /* Footer */
 
 /* Productos más vendidos */
