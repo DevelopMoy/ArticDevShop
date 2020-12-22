@@ -136,10 +136,6 @@ if ($consGenCarr=$conexionBD->query("SELECT * FROM carrito WHERE idUsuar=".$_SES
     }
 }
 
-    //LIMPIAR CARRITO
-    if($conexionBD->query("delete from carrito WHERE idUsuar=".$_SESSION["userID"])){
-
-    }
 
 
 
@@ -175,6 +171,50 @@ if ($consGenCarr=$conexionBD->query("SELECT * FROM carrito WHERE idUsuar=".$_SES
     </div>-->
     <div id="info">
         <h1>RECIBO</h1>
+        <?php
+        //GENERAR CARRITO EN BASE A LO QUE SE SOLICITA Y A LOS PRECIOS POR LOTE
+        $band=false;
+        $acum=0;
+        if ($consGenCarr=$conexionBD->query("SELECT * FROM carrito WHERE idUsuar=".$_SESSION["userID"])){//CONSULTA DEL CARRITO
+            while($filaGC = $consGenCarr->fetch_assoc()){ //ITERARA TODOS LOS PRODUCTOS A SOLICITAR DEL CARRITO
+                $band=true;
+                $productoSolicitado=$filaGC["idProd"];
+                $totalSolicitados = $filaGC["cantidad"];
+                if($consExGC=$conexionBD->query("select * from existenciaGeneral EG JOIN producto P ON EG.IDProducto=P.idProd WHERE IDProducto=".$productoSolicitado." ORDER BY Precio DESC")){//SOLICITAR EXISTENCIA POR LOTES
+                    while ($iterableGC=$consExGC->fetch_assoc()){ //ITERARA POR LOS DIFERENTES LOTES
+                        if ($totalSolicitados<$iterableGC["Existencia"]){
+                            echo "<div id=productoCarrito>";
+                            echo "<p class='nameProducto'>".$iterableGC["nombre"]."</p>";
+                            echo '<input readonly type="number" name="cantidadProductos" id="p'.$iterableGC["IDProducto"].'l'.$iterableGC["NumeroLote"].'" min="0" class="cantidProdC" value="'.$totalSolicitados.'">';
+                            echo "<p>Precio Unitario $".$iterableGC["Precio"]."</p>";
+                            echo "<p> Subtotal $".($iterableGC["Precio"]*$totalSolicitados)."</p>";
+                            $acum+=($iterableGC["Precio"]*$totalSolicitados);
+                            echo "</div>";
+                            $totalSolicitados=0;
+                        }else{
+                            if($iterableGC["Existencia"]>0){
+                                echo "<div id=productoCarrito>";
+                                echo "<p class='nameProducto'>".$iterableGC["nombre"]."</p>";
+                                echo '<input readonly type="number" name="cantidadProductos" id="p'.$iterableGC["IDProducto"].'l'.$iterableGC["NumeroLote"].'" class="cantidProdC" min="0" value="'.$iterableGC["Existencia"].'">';
+                                echo "<p>Precio Unitario $".$iterableGC["Precio"]."</p>";
+                                echo "<p>Subtotal $".($iterableGC["Precio"]*$iterableGC["Existencia"])."</p>";
+                                $acum+=($iterableGC["Precio"]*$iterableGC["Existencia"]);
+                                echo "</div>";
+                                $totalSolicitados=$totalSolicitados-$iterableGC["Existencia"];
+                            }
+                        }
+                        if($totalSolicitados==0){
+                            break;
+                        }
+                    }
+                    if($totalSolicitados>0){
+                        $aviso="Alguno de los productos seleccionados no tiene la suficiente existencia";
+                    }
+                }
+
+            }
+        }
+        ?>
         <form action="">
             <label for="nombre">GRACIAS POR SU COMPRA!</label><br><br>
             <label for="nombre">A continuación los detalles de su pedido</label><br>
@@ -191,11 +231,11 @@ if ($consGenCarr=$conexionBD->query("SELECT * FROM carrito WHERE idUsuar=".$_SES
             <label for="nombre"><?php echo $_POST["ciudDomici"]." ".$_POST["estadDomic"]?></label><br>
             <label for="nombre"><?php echo $_POST["mispaises"]?></label><br>
         </form>
-        <h1>SUBTOTAL:<?php echo $acumUl?> </h1>
-        <h1>IMPUESTOS:<?php echo ($impuestosCD/100)*$acumUl;?> </h1>
-        <h1>GASTOS ENVIO:<?php echo $gastosEnvio?> </h1>
-        <h1>DESCUENTO CUPON:<?php echo ($descCupon/100)*$acumUl?> </h1>
-        <h1>---TOTAL:<?php echo ($acumUl)+(($impuestosCD/100)*$acumUl)+($gastosEnvio)-(($descCupon/100)*$acumUl)?></h1>
+        <h1>SUBTOTAL: $<?php echo $acumUl?> </h1>
+        <h1>IMPUESTOS: $<?php echo ($impuestosCD/100)*$acumUl;?> </h1>
+        <h1>GASTOS ENVIO: $<?php echo $gastosEnvio?> </h1>
+        <h1>DESCUENTO CUPON: $<?php echo ($descCupon/100)*$acumUl?> </h1>
+        <h1>---TOTAL: $<?php echo ($acumUl)+(($impuestosCD/100)*$acumUl)+($gastosEnvio)-(($descCupon/100)*$acumUl)?> --</h1>
 
 
         <?php
@@ -236,7 +276,13 @@ if ($consGenCarr=$conexionBD->query("SELECT * FROM carrito WHERE idUsuar=".$_SES
         ?>
     </div>
 </div>
+<?php
+//LIMPIAR CARRITO
+if($conexionBD->query("delete from carrito WHERE idUsuar=".$_SESSION["userID"])){
 
+}
+
+?>
 <?php include "footer.php";?>
 </body>
 </html>
