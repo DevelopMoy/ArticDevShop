@@ -26,6 +26,7 @@ if(isset($nombClient)&&isset($emailClient)&&isset($asuntClient)&&isset($msjClien
         </html>
         ';
     $headers="From: ".$from."\r\n";
+    $headers  .= 'MIME-Version: 1.0' . "\r\n";
     $headers.='Content-type: text/html; charset=iso-8859-1' . "\r\n";
     mail($to,$subject,$message,$headers);
 
@@ -40,7 +41,7 @@ if(isset($nombClient)&&isset($emailClient)&&isset($asuntClient)&&isset($msjClien
           <h1><b>Hemos recibido satisfactoriamente su correo de contacto</b></h1>
           <br>
           <p>Enviado el dia '.date("F j, Y, g:i a").'</p>
-          <p>Le agradecemos su preferencia</p>
+          <p style="border: 1px solid black; color: #004481;">Le agradecemos su preferencia</p>
           <br>
           <p>Enseguida nos pondremos en contacto con usted</p>
         </body>

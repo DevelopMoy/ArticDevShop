@@ -19,7 +19,29 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbd93108-0f37-444f-9fc1-57bfd956cbc2" name="Default Changelist" comment="" />
+    <list default="true" id="dbd93108-0f37-444f-9fc1-57bfd956cbc2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/css/panelStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/css/panelStyles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/css/styleAdd.css" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/css/styleAdd.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/css/styleBC.css" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/css/styleBC.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/css/styleRecuperar.css" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/css/styleRecuperar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/images/fondoAgregarProducto.svg" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/images/fondoAgregarProducto.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/images/fondoPanel.svg" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/images/fondoPanel.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/js/scriptsCarrito.js" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/js/scriptsCarrito.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/mod/loginLogic.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/loginLogic.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/mod/loginView.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/loginView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/mod/menuAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/menuAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/mod/modResLogic.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/modResLogic.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/mod/modReseteo.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/modReseteo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/mod/modificarProducto.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/modificarProducto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/mod/recuperLogica.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/recuperLogica.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/mod/recuperar.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/recuperar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/mod/subirProductos.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/subirProductos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/mod/testmail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/mod/uploadProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/uploadProduct.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/otherResources/imagenCaptcha.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/otherResources/imagenCaptcha.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/responses/veriffyCart.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/responses/veriffyCart.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,7 +152,8 @@
       <workItem from="1608531912519" duration="14890000" />
       <workItem from="1608572247688" duration="780000" />
       <workItem from="1608573272631" duration="825000" />
-      <workItem from="1608594171778" duration="5106000" />
+      <workItem from="1608594171778" duration="5406000" />
+      <workItem from="1608601926476" duration="2110000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,11 @@
 <?php
+    if(!empty($_POST["rememberLog"])){
+        setcookie("passLog",$_POST["passSrvr"],time()+(86400*30));
+        setcookie("emailLog",$_POST["emailSrvr"],time()+(86400*30));
+    }else{
+        setcookie("passLog","");
+        setcookie("emailLog","");
+    }
     require "../inc/initialconfig.php";
 
     if ($resultSet = $conexionBD->query("SELECT * FROM usuario WHERE email='".$_POST["emailSrvr"]."'")){

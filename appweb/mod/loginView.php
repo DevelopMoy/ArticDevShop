@@ -20,14 +20,17 @@
         <div class="login">
         <form id="formularioLogin" action="loginLogic.php" method="post">
             <label for="correo">Inicia Sesión</label><br>
-            <input name="emailSrvr" class="form-control form-control-sm" id="correo" placeholder="Usuario" type="email" require>
-            <input name="passSrvr" id="contras" class="form-control form-control-sm" placeholder="Contraseña" type="password" require>
-            
+            <input name="emailSrvr" class="form-control form-control-sm" id="correo" placeholder="Usuario" type="email" required value="<?php if(isset($_COOKIE["emailLog"])) { echo $_COOKIE["emailLog"]; } ?>">
+            <input name="passSrvr" id="contras" class="form-control form-control-sm" placeholder="Contraseña" type="password" required value="<?php if(isset($_COOKIE["passLog"])) { echo $_COOKIE["passLog"]; } ?>">
+            <div>
+                <label style="display: inline" for="remLog">Recuerdame
+                <input style="display: inline" type="checkbox" name="rememberLog" id="remLog"></label>
+            </div>
             <div class="captcha">
                 <img id="imagenCaptcha"> <span> <button type="button" id="refreshCaptcha" class="btn btn-success"><i class="fas fa-sync-alt"></i></button> </span>
             </div>
 
-            <input  id="textFieldCaptcha" class="form-control form-control-sm w-50" placeholder="Ingrese captcha" type="text"  require>
+            <input  id="textFieldCaptcha" class="form-control form-control-sm w-50" placeholder="Ingrese captcha" type="text"  required>
 
             <button class="btn btn-primary" id="botonSubmit" type="button">Ingresar</button>
             <p id="avisos"><?php if (isset($_GET["error"])&&!empty($_GET["error"])){echo $_GET["error"];} ?></p>
