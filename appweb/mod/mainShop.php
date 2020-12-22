@@ -51,7 +51,7 @@
     $firstBand=true;
     $anterior="";
 
-    if ($queryProd=$conexionBD->query("SELECT * FROM existenciaGeneral WHERE Existencia>0 ORDER BY IDProducto, Precio DESC;")){
+    if ($queryProd=$conexionBD->query("SELECT * FROM existenciaGeneral WHERE Existencia>0 AND(SELECT visible FROM producto WHERE producto.idProd=existenciaGeneral.IDProducto) ORDER BY IDProducto, Precio DESC;")){
         while ($row = $queryProd->fetch_assoc()){
             if ($firstBand){
                 $anterior=$row;
