@@ -20,8 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbd93108-0f37-444f-9fc1-57bfd956cbc2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/appweb/mod/vistaSuscrib.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appweb/responses/suscribirseResp.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/mod/uploadProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/uploadProduct.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/mod/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/footer.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,6 +141,8 @@
       <workItem from="1608613798423" duration="18108000" />
       <workItem from="1608634898901" duration="1573000" />
       <workItem from="1608637187523" duration="62000" />
+      <workItem from="1608665474556" duration="1004000" />
+      <workItem from="1608671215345" duration="646000" />
     </task>
     <servers />
   </component>
@@ -166,11 +170,11 @@
       <screen x="74" y="44" width="1846" height="1036" />
     </state>
     <state x="747" y="281" width="489" height="567" key="NewPhpClassDialog/74.44.1846.1036@74.44.1846.1036" timestamp="1607907185344" />
-    <state x="792" y="488" width="379" height="145" key="NewPhpFileDialog" timestamp="1608616256910">
+    <state x="792" y="488" width="379" height="145" key="NewPhpFileDialog" timestamp="1608665670332">
       <screen x="74" y="44" width="1846" height="1036" />
     </state>
     <state x="1020" y="627" width="379" height="145" key="NewPhpFileDialog/72.28.1848.1052@72.28.1848.1052" timestamp="1607646977754" />
-    <state x="792" y="488" width="389" height="155" key="NewPhpFileDialog/74.44.1846.1036@74.44.1846.1036" timestamp="1608616256910" />
+    <state x="792" y="488" width="389" height="155" key="NewPhpFileDialog/74.44.1846.1036@74.44.1846.1036" timestamp="1608665670332" />
     <state x="821" y="245" width="341" height="639" key="RollbackChangesDialog" timestamp="1608438818080">
       <screen x="74" y="44" width="1846" height="1036" />
     </state>

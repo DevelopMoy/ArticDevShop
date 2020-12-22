@@ -38,12 +38,10 @@
             </div>
             <div class="col-md-2 mt-md-0 mt-3 item">
                 <h6>Suscribete y obten noticias y descuentos exclusivos</h6>
-                <form action="">
+                <form action="/appweb/responses/suscribirseResp.php" method="post">
                     <label for=""><input type="text" name="correo" placeholder="Introduce tu correo electronico"></label>
                     <button class="btn btn-primary btn-lg" id="botonSubmit" type="submit">Suscribirme</button>
                 </form>
-
-
             </div>
         </div>
         <!-- Grid row -->
