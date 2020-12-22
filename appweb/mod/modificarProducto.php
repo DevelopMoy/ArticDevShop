@@ -40,24 +40,10 @@
         }
     }else if(isset($_POST['idProdDelete'])){
         $idDelete = $_POST['idProdDelete'];
-        $cantidad = 0;
-        $existencia = 0;
-        if($lotesDelete = $conexionBD -> query("SELECT numLote, idProd, cantidad FROM inventario where idProd=$idDelete;")){
-            while($vectorDelete= $lotesDelete -> fetch_assoc()){
-                $cantidad+=$vectorDelete["cantidad"];
-            }   
-            if($existenciaProd = $conexionBD -> query("SELECT * from existencia where idproduct=$idDelete;")){
-                while($vectorExistencia = $existenciaProd -> fetch_assoc()){
-                    $existencia+=$vectorExistencia["Exitencia"];
-                }    
-            }
-            if($existencia>$cantidad){
-
-            }else{
-                volver("No hay existencia de ese producto");
-            }
+        if($consultaDel = $conexionBD->query(("UPDATE producto set visible = false where idProd=$idDelete;"))){
+            volver("Producto dado de baja");
         }else{
-            echo '<h1>'.mysqli_error($conexionBD).'</h1>';
+            volver("Producto no ecnontrado");
         }
     }
 ?>
