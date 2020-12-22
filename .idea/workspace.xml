@@ -19,12 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbd93108-0f37-444f-9fc1-57bfd956cbc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/appweb/mod/modResLogic.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appweb/mod/modReseteo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/mod/loginView.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/loginView.php" afterDir="false" />
-    </list>
+    <list default="true" id="dbd93108-0f37-444f-9fc1-57bfd956cbc2" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -135,7 +130,7 @@
       <workItem from="1608531912519" duration="14890000" />
       <workItem from="1608572247688" duration="780000" />
       <workItem from="1608573272631" duration="825000" />
-      <workItem from="1608594171778" duration="4523000" />
+      <workItem from="1608594171778" duration="5106000" />
     </task>
     <servers />
   </component>
