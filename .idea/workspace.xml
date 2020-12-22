@@ -20,10 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbd93108-0f37-444f-9fc1-57bfd956cbc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/appweb/mod/vistaSuscrib.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appweb/responses/suscribirseResp.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appweb/mod/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/mod/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appweb/responses/suscribirseResp.php" beforeDir="false" afterPath="$PROJECT_DIR$/appweb/responses/suscribirseResp.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,6 +140,7 @@
       <workItem from="1608637187523" duration="62000" />
       <workItem from="1608665474556" duration="1004000" />
       <workItem from="1608671215345" duration="646000" />
+      <workItem from="1608672083385" duration="304000" />
     </task>
     <servers />
   </component>

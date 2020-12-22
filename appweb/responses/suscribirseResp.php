@@ -11,8 +11,8 @@ if (isset($_POST["correo"])&&!empty($_POST["correo"])){
         </head>
         <body>
           <h1>Estimado cliente, le agradecemos su preferencia y como muestra de agradecimiento le ofrecemos:</h1>
-          <p>Un cupon para su proxima compra, recibirá un 35% de descuento</p><br>
-          <p style="color: #004481; border: 1px solid black; margin: 10px;">44353</p><br>
+          <p>Un cupon para su proxima compra, recibira un 35% de descuento</p><br>
+          <p style="color: white; border: 1px solid black; margin: 10px; text-align: center; font-size: 28px;background-color: #00b7ff; width: 30%;">44353</p><br>
           <p>Sin mas por el momento, le deseamos que pase felices fiestas con su familia y seres queridos.</p>
         </body>
         </html>
