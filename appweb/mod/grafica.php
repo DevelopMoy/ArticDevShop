@@ -15,6 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/appweb/css/styles.css">
     <link rel="stylesheet" href="/appweb/css/styleAdd.css">
+    <link rel="icon" type="image/png"  href="/appweb/images/favicon-32x32.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
 </head>
 <body>
@@ -27,18 +28,45 @@
     </div>
     <?php include "footer.php";?>
     <script src="https://kit.fontawesome.com/791abd0481.js" crossorigin="anonymous"></script>
+    <?php
+        $acum1=0;
+        $acum2=0;
+        $acum3=0;
+        $acum4=0;
+
+        if ($ressSet = $conexionBD->query("select I.idProd, SUM(IV.cantidad),P.idCateg FROM inventario_venta IV JOIN inventario I ON IV.numLote=I.numLote JOIN producto P ON I.idProd=P.idProd  GROUP BY IV.numLote ORDER BY P.idCateg ASC;")){
+            while ($row = $ressSet->fetch_assoc()){
+                switch ($row["idCateg"]){
+                    case 2:
+                        $acum1+=$row["SUM(IV.cantidad)"];
+                        break;
+                    case 3:
+                        $acum2+=$row["SUM(IV.cantidad)"];
+                        break;
+                    case 4:
+                        $acum3+=$row["SUM(IV.cantidad)"];
+                        break;
+                    case 5:
+                        $acum4+=$row["SUM(IV.cantidad)"];
+                        break;
+                }
+            }
+        }
+    ?>
+
     <script>
         var ctx= document.getElementById("myChart").getContext("2d");
         var myChart= new Chart(ctx,{
             type:"pie",
             data:{
-                labels:['GPU','Procesadores','Teclados',],
+                labels:['GPU','Procesadores','Teclados','Mouse'],
                 datasets:[{
-                        data:[10,9,15],
+                        data:[<?php echo $acum1?>,<?php echo $acum2?>,<?php echo $acum3?>,<?php echo $acum4?>],
                         backgroundColor:[
                             'rgb(66, 134, 244,1)',
                             'rgb(74, 135, 72,1)',
-                            'rgb(229, 89, 50,1)'
+                            'rgb(229, 89, 50,1)',
+                            'rgb(229,220,50)'
                         ]
                 }]
             },

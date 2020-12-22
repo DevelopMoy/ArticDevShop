@@ -157,6 +157,7 @@ if ($consGenCarr=$conexionBD->query("SELECT * FROM carrito WHERE idUsuar=".$_SES
     <link rel="stylesheet" href="/appweb/css/styles.css">
     <link rel="stylesheet" href="/appweb/css/styleContactanos.css">
     <link rel="stylesheet" href="/appweb/css/styleAdd.css">
+    <link rel="icon" type="image/png"  href="/appweb/images/favicon-32x32.png">
 </head>
 <body>
 <?php include "header.php" ?>

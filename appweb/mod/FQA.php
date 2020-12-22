@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/appweb/css/styles.css">
     <script src="https://kit.fontawesome.com/791abd0481.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+    <link rel="icon" type="image/png"  href="/appweb/images/favicon-32x32.png">
 </head>
 <body>
 <?php require "../inc/initialconfig.php"?>

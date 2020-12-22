@@ -10,6 +10,7 @@
     <script src="https://kit.fontawesome.com/791abd0481.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/appweb/css/styles.css">
     <link rel="stylesheet" href="/appweb/css/styleContactanos.css">
+    <link rel="icon" type="image/png"  href="/appweb/images/favicon-32x32.png">
 </head>
 <body>
     <?php require "../inc/initialconfig.php"?>

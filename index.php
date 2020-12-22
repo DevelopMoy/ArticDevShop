@@ -16,6 +16,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png"  href="/appweb/images/favicon-32x32.png">
     </head>
 
     <body>

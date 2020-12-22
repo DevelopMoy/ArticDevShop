@@ -14,6 +14,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png"  href="/appweb/images/favicon-32x32.png">
     </head>
 
     <body>

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/appweb/css/styleLogin.css">
     <script src="https://kit.fontawesome.com/66b3831846.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png"  href="/appweb/images/favicon-32x32.png">
 </head>
 
 <body>
