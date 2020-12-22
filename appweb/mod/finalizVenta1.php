@@ -42,8 +42,9 @@ if ($resSetCarr=$conexionBD->query("SELECT * FROM carrito WHERE idUsuar=".$_SESS
 ?>
 <div id="contMP">
     <form id="contPadFV" action="finalizarCompra.php" method="post">
-        <div id="subCtFV">
 
+        <div id="subCtFV">
+            <p style="margin: 0; text-align: center; font-size: 38px;">Resumen de su compra</p>
             <div id="descComprFV">
                 <div id="titulosCarrito">
                     <h1 class="nameProducto">Nombre</h1>
@@ -113,26 +114,27 @@ if ($resSetCarr=$conexionBD->query("SELECT * FROM carrito WHERE idUsuar=".$_SESS
             <p id="alertaMsj"><?php echo $aviso ?></p>
         </div>
 
-        <div id="partePagos">
-            <p>Elija su tipo de pago</p>
+        <div id="partePagos" style="font-size: 19px;">
+            <p style="font-size: 26px;">Elija su tipo de pago</p>
             <input required type="radio" checked id="pagTarj" class="pag" name="tipoPag" value="tarjetaCred">
             <label for="tarjetaCred">Tarjeta de Credito</label>
             <input required type="radio" id="pagOx" class="pag" name="tipoPag" value="pagOxxo">
             <label for="pagOxxo">OXXO</label>
             <p>Tipo de envio</p>
             <input required type="radio" id="tipoEnvio" name="tipEnvio" value="expressEnv">
-            <label for="expressEnv">Envio express (24 hrs)</label>
+            <label for="expressEnv">Envio express (24 hrs) $400 Pesos</label>
             <input required type="radio" id="tipoEnvio" name="tipEnvio" value="gratuit">
             <label for="gratuit">Gratuito (5-6 dias)</label>
         </div>
 
-        <div id="parteTarjetV">
-            <div id="pagoOxxo">
+        <div id="parteTarjetV" style="opacity: 0.9">
+            <p style="font-size: 25px">Metodo Pago</p>
+            <div id="pagoOxxo" style="font-size: 19px">
                 <p>Pago en OXXO</p>
                 <p>Favor de dictar al cajero el siguiente codigo</p>
                 <p><?php echo rand(1111111111,9999999999)?></p>
             </div>
-            <div id="pagoBanco">
+            <div id="pagoBanco" >
                 <label for="numTarj">Numero de Tarjeta</label>
                 <input id="numTarj" type="number" required name="numeroTarj">
                 <label for="titulName">Nombre del titular</label>
@@ -140,18 +142,29 @@ if ($resSetCarr=$conexionBD->query("SELECT * FROM carrito WHERE idUsuar=".$_SESS
                 <label for="codigSeg">Codigo de seguridad</label>
                 <input id="codigSeg" required type="number" name="codSeg">
             </div>
+
             <div id="datosDomicil">
-                <p>Datos de envio</p>
-                <label for="nombreRecib">Nombre de quien recibe</label>
-                <input required type="text" id="nombreRecib" name="nombEnvi">
-                <label for="calle">Calle y Fraccionamiento</label>
-                <input id="calle" name="callFracc" type="text" required>
+                <div style="width: 100%;height: 2px; background-color: white; margin: 10px;" ></div>
+                <p style="font-size: 25px">Datos de envio</p>
+                <label for="nombreRecib">Nombre</label>
+                <input required type="text" id="nombreRecib" name="nombEnvi"><br>
+                <label for="calle">Calle</label>
+                <input id="calle" name="callFracc" type="text" required><br>
                 <label for="numDomic">Numero</label>
-                <input id="numDomic" type="number" required name="numDomic">
+                <input id="numDomic" type="number" required name="numDomic"><br>
                 <label for="ciudDomic">Ciudad</label>
-                <input id="ciudDomic" type="text" required name="ciudDomici">
+                <input id="ciudDomic" type="text" required name="ciudDomici"><br>
                 <label for="estDomic">Estado</label>
-                <input id="estDomic" type="text" required name="estadDomic">
+                <input id="estDomic" type="text" required name="estadDomic"><br><br><br>
+                <label for="cuponData">Cupón</label>
+                <input style="border-radius: 3px;" id="cuponData" type="text" name="cuponDc">
+
+                <label>Pais
+                    <input required list="paises" name="mispaises" /></label>
+                <datalist id="paises">
+                    <option value="Mexico(IVA-16)">
+                    <option value="USA y Resto del mundo (IVA-23)">
+                </datalist>
             </div>
             <div id="botonEnviar">
                 <input type="submit">

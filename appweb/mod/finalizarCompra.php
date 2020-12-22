@@ -36,6 +36,32 @@ if($aviso!=""){
 $cuponCD = "NULL";
 $impuestosCD = 0;
 $gastosEnvio = 0;
+$descCupon =0;
+
+if($_POST["tipEnvio"]=="expressEnv"){
+    $gastosEnvio=400;
+}
+
+//validar cupón
+if ($rssCupon=$conexionBD->query("select * from cupon where idCupon=".$_POST["cuponDc"])){
+    if ($arrayCupRss=$rssCupon->fetch_assoc()){
+        $cuponCD=$arrayCupRss["idCupon"];
+
+        if ($rsCpn = $conexionBD->query("SELECT porcentaje FROM cupon WHERE idCupon=".$_POST["cuponDc"])){
+            if ($rowcpnf=$rsCpn->fetch_assoc()){
+                $descCupon=$rowcpnf["porcentaje"];
+            }
+        }
+    }
+
+}
+
+//validar impuestos
+if ($_POST["mispaises"]=="Mexico(IVA-16)"){
+    $impuestosCD=16;
+}else{
+    $impuestosCD=23;
+}
 
     $idVenta="";
     //CREAR VENTA
@@ -54,42 +80,7 @@ $gastosEnvio = 0;
         echo "<script>alert('Error al procesar compra, solicitud agregar venta nueva');</script>";
         //header("Location: compras.php");
     }
-
-    // CREAR ENLACE inventario_venta
-    /*if ($resSetCarr = $conexionBD->query("SELECT * FROM carrito WHERE idUsuar=" . $_SESSION["userID"])) { //CONSULTA PARA OBTENER TODOS LOS VALORES DEL CARRITO
-        while ($filaCarr = $resSetCarr->fetch_assoc()) { //RECORREMOS CADA UNO DE LOS PRODUCTOS DEL CARRITO
-            $prodSolicit=$filaCarr["idProd"];
-            $existenciaSolicit = $filaCarr["cantidad"];
-
-            if ($resSTExtc = $conexionBD->query("select * from existenciaGeneral WHERE IDProducto=".$prodSolicit." AND Existencia>0 ORDER BY Precio desc;")){
-                while ($filaresSTEX=$resSTExtc->fetch_assoc()){
-                    if ($existenciaSolicit<=$filaresSTEX["Existencia"]){//EL LOTE SATISFACE TODA LA PETICION DE PRODUCTOS
-                        if ($conexionBD->query("INSERT INTO inventario_venta (numLote,idVenta,cantidad,cupon,gastosEnvio,impuestos) VALUES (".$filaresSTEX["NumeroLote"].",".$idVenta.",".$existenciaSolicit.",".$cuponCD.",".$gastosEnvio.",".$impuestosCD.")")){
-                            break;
-                        }else{
-                            echo "<script>alert('error fatal al crear la venta :c');</script>";
-                            //header("Location: compras.php");
-                        }
-                    }else{
-                        if ($existenciaSolicit>$filaresSTEX["Existencia"]){// EL LOTE NO ALCANZA A SATISFACER LA DEMANDA
-                            if ($conexionBD->query("INSERT INTO inventario_venta (numLote,idVenta,cantidad,cupon,gastosEnvio,impuestos) VALUES (".$filaresSTEX["NumeroLote"].",".$idVenta.",".$filaresSTEX["Existencia"].",".$cuponCD.",".$gastosEnvio.",".$impuestosCD.")")){
-                                $existenciaSolicit-=$filaresSTEX["Existencia"];
-                            }else{
-                                echo "<script>alert('error fatal al crear la venta :c');</script>";
-                                //header("Location: compras.php");
-                            }
-                        }
-                    }
-                }
-            }else{
-                echo "<script>alert('Error al procesar compra, SOLICITUD EXISTENCIA GENERAL');</script>";
-                //header("Location: compras.php");
-            }
-        }
-    } else {
-        echo "<script>alert('Error al procesar compra, solicitud productos carrito');</script>";
-        //header("Location: compras.php");
-    }*/
+$acumUl=0;
 $band=false;
 if ($consGenCarr=$conexionBD->query("SELECT * FROM carrito WHERE idUsuar=".$_SESSION["userID"])){//CONSULTA DEL CARRITO
     while($filaGC = $consGenCarr->fetch_assoc()){ //ITERARA TODOS LOS PRODUCTOS A SOLICITAR DEL CARRITO
@@ -105,6 +96,7 @@ if ($consGenCarr=$conexionBD->query("SELECT * FROM carrito WHERE idUsuar=".$_SES
                     echo "<p>$".$iterableGC["Precio"]."</p>";
                     echo "<p>$".($iterableGC["Precio"]*$totalSolicitados)."</p>";
                     echo "</div>";*/
+                    $acumUl+=(($iterableGC["Precio"]*$totalSolicitados));
                     if ($conexionBD->query("INSERT INTO inventario_venta (numLote,idVenta,cantidad,cupon,gastosEnvio,impuestos) VALUES (".$iterableGC["NumeroLote"].",".$idVenta.",".$totalSolicitados.",".$cuponCD.",".$gastosEnvio.",".$impuestosCD.")")){
                         break;
                     }else{
@@ -122,6 +114,7 @@ if ($consGenCarr=$conexionBD->query("SELECT * FROM carrito WHERE idUsuar=".$_SES
                         echo "<p>$".($iterableGC["Precio"]*$iterableGC["Existencia"])."</p>";
                         echo "</div>";
                         */
+                        $acumUl+=($iterableGC["Precio"]*$iterableGC["Existencia"]);
                         if ($conexionBD->query("INSERT INTO inventario_venta (numLote,idVenta,cantidad,cupon,gastosEnvio,impuestos) VALUES (".$iterableGC["NumeroLote"].",".$idVenta.",".$iterableGC["Existencia"].",".$cuponCD.",".$gastosEnvio.",".$impuestosCD.")")){
 
                         }else{
@@ -143,7 +136,109 @@ if ($consGenCarr=$conexionBD->query("SELECT * FROM carrito WHERE idUsuar=".$_SES
     }
 }
 
-    echo "<script>alert('COMPRA EXITOSA');</script>";
+    //LIMPIAR CARRITO
+    if($conexionBD->query("delete from carrito WHERE idUsuar=".$_SESSION["userID"])){
+
+    }
+
+
+
+
     //header("Location: compras.php");
+    //GENERAR RECIBO
 ?>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>ArticDev Shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/791abd0481.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/appweb/css/styles.css">
+    <link rel="stylesheet" href="/appweb/css/styleContactanos.css">
+    <link rel="stylesheet" href="/appweb/css/styleAdd.css">
+</head>
+<body>
+<?php include "header.php" ?>
+<?php
+    /*echo "<p> $acumUl </p>"//NUESTRO TOTAL
+    echo "($impuestosCD/100)*$acumUl";//IMPUESTS
+    echo "$gastosEnvio";//GASTOS ENVIO-->*/
+?>
+<div class="contenedor">
+    <!--<div id="imgpro">
+        <img src="prueba.jpg" alt="">
+    </div>-->
+    <div id="info">
+        <h1>RECIBO</h1>
+        <form action="">
+            <label for="nombre">GRACIAS POR SU COMPRA!</label><br><br>
+            <label for="nombre">A continuación los detalles de su pedido</label><br>
+            <label for="nombre">Datos de pago</label><br>
+            <label for="nombre">METODO DE PAGO: <?php
+                    if (isset($_POST["numTarj"])){
+                        echo "PAGO CON TARJETA DE CREDITO";
+                    }else{
+                        echo "Pago en sucursal OXXO";
+                    }
+                ?></label><br>
+            <label for="nombre">Su pedido será enviado a</label><br>
+            <label for="nombre"><?php echo $_POST["callFracc"]?></label><br>
+            <label for="nombre"><?php echo $_POST["ciudDomici"]." ".$_POST["estadDomic"]?></label><br>
+            <label for="nombre"><?php echo $_POST["mispaises"]?></label><br>
+        </form>
+        <h1>SUBTOTAL:<?php echo $acumUl?> </h1>
+        <h1>IMPUESTOS:<?php echo ($impuestosCD/100)*$acumUl;?> </h1>
+        <h1>GASTOS ENVIO:<?php echo $gastosEnvio?> </h1>
+        <h1>DESCUENTO CUPON:<?php echo ($descCupon/100)*$acumUl?> </h1>
+        <h1>---TOTAL:<?php echo ($acumUl)+(($impuestosCD/100)*$acumUl)+($gastosEnvio)-(($descCupon/100)*$acumUl)?></h1>
+
+
+        <?php
+        $emailPersona="admin@articdev.online";
+        if ($rstEmaxd = $conexionBD->query("SELECT email FROM usuario WHERE idUsuar=".$_SESSION["userID"])){
+            if ($resRowArr = $rstEmaxd->fetch_assoc()){
+                $emailPersona = $resRowArr["email"];
+            }
+        }
+
+        ini_set('display_errors',1);
+        error_reporting(E_ALL);
+        $from="admin@articdev.online";
+        $to=$emailPersona;
+        $subject = "Recibo de su visita a nuestra pagina";
+        $message='
+        <html>
+        <head>
+          <title>Mensaje Cliente</title>
+        </head>
+        <body>
+          <h1>Le enviamos su recibo con los datos correspondientes</h1>
+          <p>Enviado el dia '.date("F j, Y, g:i a").'</p>
+          <h1>SUBTOTAL:'.$acumUl.'</h1>
+        <h1>IMPUESTOS:'.(($impuestosCD/100)*$acumUl).' </h1>
+        <h1>GASTOS ENVIO: '.$gastosEnvio.'</h1>
+        <h1>DESCUENTO CUPON:'.(($descCupon/100)*$acumUl).' </h1>
+        <h1>---TOTAL: '.(($acumUl)+(($impuestosCD/100)*$acumUl)+($gastosEnvio)-(($descCupon/100)*$acumUl)).'</h1>
+          <p>GRACIAS POR SU COMPRA!</p><br><br>
+        </body>
+        </html>
+        ';
+        $headers="From: ".$from."\r\n";
+        $headers  .= 'MIME-Version: 1.0' . "\r\n";
+        $headers.='Content-type: text/html; charset=iso-8859-1' . "\r\n";
+        mail($to,$subject,$message,$headers);
+
+        ?>
+    </div>
+</div>
+
+<?php include "footer.php";?>
+</body>
+</html>
+
 
