@@ -1,5 +1,5 @@
 <?php
-if (isset($_POST["correo"])&&!empty($_SESSION["correo"])){
+if (isset($_POST["correo"])&&!empty($_POST["correo"])){
     ini_set('display_errors',1);
     error_reporting(E_ALL);
     $from="admin@articdev.online";
