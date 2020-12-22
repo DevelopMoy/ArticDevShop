@@ -27,6 +27,7 @@
         <button class="btn btn-success btn-lg"><a href="modificarProducto.php">Modificar/Eliminar</a></button>
         <button class="btn btn-success btn-lg"><a href="subirProductos.php">Agregar Producto</a></button>
         <button class="btn btn-success btn-lg"><a href="agregarExistenciaProducto.php">Agregar Existencia</a></button>
+        <button class="btn btn-success btn-lg"><a href="grafica.php">Grafica</a></button>
     </div>
     <?php include "footer.php"?>
 </body>
