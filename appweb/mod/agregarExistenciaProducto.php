@@ -22,7 +22,7 @@
                    <input type="number" name="cantidad" id="cantidad"><br>
                    <label for="precioComp">Precio de Compra</label><br>
                    <input type="number" name="precioComp" id="precioCom"><br>
-                   <label for="precVent">Precio de Compra</label><br>
+                   <label for="precVent">Precio de Venta</label><br>
                    <input type="number" name="precioVent" id="precioVent"><br><br>
                    <input class="btn btn-success btn-lg" type="submit" value="Agregar">
                </form>

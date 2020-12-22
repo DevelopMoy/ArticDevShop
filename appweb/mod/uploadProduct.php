@@ -27,27 +27,22 @@
     if($_FILES['imagen']['name'] != ""){
         $info = new SplFileInfo($_FILES['imagen']['name']);
             $extension = $info->getExtension();
-        // Primero, hay que validar que se trata de un JPG/GIF/PNG
-        $allowedExts = array("jpg", "jpeg", "gif", "png", "JPG", "GIF", "PNG");
-        if ((($_FILES["imagen"]["type"] == "image/gif")
-                || ($_FILES["imagen"]["type"] == "image/jpeg")
-                || ($_FILES["imagen"]["type"] == "image/png")
-                || ($_FILES["imagen"]["type"] == "image/pjpeg"))
-                && in_array($extension, $allowedExts)) {
-        if($conexionBD->query("INSERT INTO producto (idCateg, nombre, descripcion) VALUES($idCategoria,'$productName','$descripcionProducto');")){
-            if($consultaId=$conexionBD->query("SELECT idProd FROM producto ORDER BY idProd DESC LIMIT 1;")){
-                if($arrayId = $consultaId->fetch_assoc()){
-                    $idImg =  $arrayId["idProd"];
-                
+        // Primero, hay que validar que se trata de un PNG
+        if (($_FILES["imagen"]["type"] == "image/png")) {
+            if($conexionBD->query("INSERT INTO producto (idCateg, nombre, descripcion) VALUES($idCategoria,'$productName','$descripcionProducto');")){
+                if($consultaId=$conexionBD->query("SELECT idProd FROM producto ORDER BY idProd DESC LIMIT 1;")){
+                    if($arrayId = $consultaId->fetch_assoc()){
+                        $idImg =  $arrayId["idProd"];
+                    
+                    }else{
+                        volver("Un error ha ocurrido. Favor de verificar los datos");
+                    }
                 }else{
                     volver("Un error ha ocurrido. Favor de verificar los datos");
                 }
             }else{
                 volver("Un error ha ocurrido. Favor de verificar los datos");
             }
-        }else{
-            volver("Un error ha ocurrido. Favor de verificar los datos");
-        }
          // el archivo es un JPG/GIF/PNG, entonces...
          $info = new SplFileInfo($_FILES['imagen']['name']);
          $extension = $info->getExtension();
